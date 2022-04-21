@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import FluxMusic from './FluxMusic'
+import { Provider } from './context/Provider';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <Provider>
+      <FluxMusic />
+    </Provider>
   </React.StrictMode>
 )
