@@ -6,7 +6,8 @@
 
 main {
   background-color: #E0DBEB;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .header-container {
@@ -20,9 +21,9 @@ main {
 .header-container .header-sub-container {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
-  width: 95%;
+  width: 55%;
 }
 
 .header-nav-container {
@@ -61,12 +62,17 @@ main {
   bottom: 0;
 }
 
-@media ( max-width: 565px) {
+@media ( max-width: 785px) {
   .header-sub-container {
     flex-direction: column;
   }
 
   .header-nav-container {
     margin-top: 20px;
+  }
+}
+@media ( max-width: 565px) {
+  .header-nav-container ul li {
+    margin: 0px 10px;
   }
 }
