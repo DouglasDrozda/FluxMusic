@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import context from '../../context';
 import '../../styles/News.css';
-// import dataImages from '../../dataImages';
+
 
 function News(): JSX.Element {
   const { isLoading, dataNews, filterNews } = useContext(context).context;
@@ -34,6 +34,3 @@ function News(): JSX.Element {
 };
 
 export default News;
-// {dataImages?.map((img) => (
-//   <img src={img.url} alt="test" width="300px" height="200px" />
-// ))}

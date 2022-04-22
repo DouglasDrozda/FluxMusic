@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/Header.css';
 import logoFluxMusic from '../../images/logoFluxMusic.svg'
 
@@ -10,9 +11,9 @@ function Header(): JSX.Element {
         <img src={logoFluxMusic} alt="logo-flux-music" width="185px" />
         <nav className="header-nav-container">
           <ul>
-            <li><a href="#news">Notícias</a></li>
-            <li>Artistas</li>
-            <li>Disco</li>
+            <li><Link to="/">Notícias</Link></li>
+            <li><Link to="/artists">Artistas</Link></li>
+            <li><Link to="/disc">Disco</Link></li>
           </ul>
         </nav>
       </div>
