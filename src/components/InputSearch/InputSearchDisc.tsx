@@ -4,10 +4,10 @@ import context from '../../context';
 import { IHandleCHange } from '../../interfaces';
 
 function InputSearchDisc(): JSX.Element {
-  const { searchInputArtist, setSearchInputArtist } = useContext(context).context;
+  const { searchInputDiscs, setSearchInputDiscs } = useContext(context).context;
 
   const handleChangeInput = ({ target: { value } }: IHandleCHange): void => {
-    setSearchInputArtist(value);
+    setSearchInputDiscs(value);
   };
 
   return (
@@ -17,7 +17,7 @@ function InputSearchDisc(): JSX.Element {
           type="search"
           placeholder="Buscar disco..."
           onChange={handleChangeInput}
-          value={searchInputArtist}
+          value={searchInputDiscs}
           className="inputSearch"
         />
       </form>
