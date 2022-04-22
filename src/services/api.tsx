@@ -1,7 +1,15 @@
 import axios from 'axios';  
 
-const api = axios.create({
+const apiNews = axios.create({
   baseURL: import.meta.env.VITE_TIMELINE,
 });
 
-export default api;
+const apiArtists = axios.create({
+  baseURL: import.meta.env.VITE_ARTISTS,
+});
+
+
+export {
+  apiNews,
+  apiArtists,
+};
