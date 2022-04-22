@@ -1,0 +1,29 @@
+.inputSearch-container {
+  background-color: #160F23;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu-input-container {
+  display: flex;
+  justify-content:center;
+  width: 75%;
+  padding: 20px;
+}
+
+.inputSearch {
+  border-radius: 5px;
+  background-color: #534e5e91;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: 70%;
+  padding: 15px;
+  height: 2.5vw;
+}
+
+.inputSearch:hover {
+  box-shadow: 1px 1px 10px 4px rgba(193, 4, 36, 0.53);
+  transition: all 0.5s;
+}

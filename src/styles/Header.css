@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   background-color: #E0DBEB;
   width: 100%;
@@ -23,11 +27,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  width: 55%;
-}
-
-.header-nav-container {
-  width: 50%;
+  width: 75%;
 }
 
 .header-nav-container ul {
@@ -45,7 +45,8 @@ main {
   list-style: none;
 }
 
-.header-nav-container ul li:hover {
+.header-nav-container ul li:hover,
+.header-nav-container ul li a:hover {
   color: #C10425;
   transition: all 0.5s;
   text-decoration: underline;
@@ -60,6 +61,11 @@ main {
   right: 0;
   left: -5px;
   bottom: 0;
+}
+
+.header-nav-container ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media ( max-width: 785px) {
