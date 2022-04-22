@@ -9,6 +9,17 @@ export interface INews {
   url: string,
 }
 
+export interface IArtist {
+  id: number,
+  name: string,
+  img: string | undefined,
+  alt: string,
+  url: string,
+  description: string
+  nascimento: string,
+  falecimento: string,
+}
+
 export interface IHandleCHange {
   target: {
     value: string;
