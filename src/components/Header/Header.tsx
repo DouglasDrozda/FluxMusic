@@ -13,7 +13,7 @@ function Header(): JSX.Element {
           <ul>
             <li><Link to="/">Notícias</Link></li>
             <li><Link to="/artists">Artistas</Link></li>
-            <li><Link to="/disc">Disco</Link></li>
+            <li><Link to="/discs">Disco</Link></li>
           </ul>
         </nav>
       </div>
