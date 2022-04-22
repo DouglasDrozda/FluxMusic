@@ -8,7 +8,9 @@ function Header(): JSX.Element {
   return (
     <header className="header-container">
       <div className="header-sub-container">
-        <img src={logoFluxMusic} alt="logo-flux-music" width="185px" />
+        <Link to="/">
+          <img src={logoFluxMusic} alt="logo-flux-music" width="185px" />
+        </Link>
         <nav className="header-nav-container">
           <ul>
             <li><Link to="/">Notícias</Link></li>
