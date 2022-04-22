@@ -26,6 +26,8 @@ function Discs(): JSX.Element {
               </div>
             </li>
           )}
+          {filterDiscs?.length === 0 && !isLoading ?
+            (<h4 className="error-message">Ops, nenhum disco encontrado com esse nome 😥</h4>) : null}
       </ul>
     </>
   );

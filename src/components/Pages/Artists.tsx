@@ -31,6 +31,8 @@ function Artists(): JSX.Element {
                 </div>
               </li>
             )}
+          {filterArtist?.length === 0 && !isLoading ?
+            (<h4 className="error-message">Ops, nenhum artista encontrado com esse nome 😥</h4>) : null}
         </ul>
       </div>
     </>

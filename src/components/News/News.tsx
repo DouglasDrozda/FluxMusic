@@ -28,6 +28,10 @@ function News(): JSX.Element {
           ))}
         </ul>
       }
+      <div className="error-message-contain">
+        {filterNews?.length === 0 && !isLoading ?
+          (<h4 className="error-message">Ops, nenhuma notícia encontrada com esse nome 😥</h4>) : null}
+      </div>
     </section>
   );
 };
