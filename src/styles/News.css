@@ -1,8 +1,9 @@
 .news-container {
   display: flex;
-  justify-content: center;
   width: 100%;
+  align-items: center;
   min-height: 100vh;
+  flex-direction: column;
   margin-top: 2vw;
   background-color: #E0DBEB;
 }
@@ -103,6 +104,16 @@
 
 .news-infos a {
   width: 70%;
+}
+
+.error-message-contain {
+  width: 75%;
+  text-align: center;
+}
+
+.error-message {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
 }
 
 @media ( max-width: 1165px) {

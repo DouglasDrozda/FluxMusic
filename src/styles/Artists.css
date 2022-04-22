@@ -1,9 +1,9 @@
 .artists-container {
   background-color: #E0DBEB;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 100vh;
   flex-direction: column;
   width: 100%;
 }

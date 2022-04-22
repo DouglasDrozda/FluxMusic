@@ -2,6 +2,7 @@
   background-color: #E0DBEB;
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
   justify-content: center;
 }
 
