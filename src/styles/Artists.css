@@ -1,8 +1,38 @@
 .artists-container {
   background-color: #E0DBEB;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.artists-tilte {
+  width: 90%;
+  position: relative;
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.artists-tilte::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 3px;
+  background-color: #c10425;
+  top: 37px;
+  bottom: 0px;
+  right: 0px;
+  left: 1px;
+}
+
+.artists-sub-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .artists-card {
@@ -12,7 +42,7 @@
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 400px;
-  margin: 70px 20px;
+  margin: 50px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
