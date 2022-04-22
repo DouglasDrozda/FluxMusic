@@ -7,10 +7,10 @@ function Header(): JSX.Element {
   return (
     <header className="header-container">
       <div className="header-sub-container">
-        <img src={logoFluxMusic} alt="logo-flux-music" width="145px" />
+        <img src={logoFluxMusic} alt="logo-flux-music" width="185px" />
         <nav className="header-nav-container">
           <ul>
-            <li>Notícias</li>
+            <li><a href="#news">Notícias</a></li>
             <li>Artistas</li>
             <li>Disco</li>
           </ul>
