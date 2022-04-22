@@ -15,9 +15,19 @@ export interface IArtist {
   img: string | undefined,
   alt: string,
   url: string,
-  description: string
+  description: string,
   nascimento: string,
   falecimento: string,
+}
+
+export interface IDiscs {
+  id: number,
+  title: string,
+  release_date: string,
+  img: string | undefined,
+  alt: string,
+  description: string,
+  link: string,
 }
 
 export interface IHandleCHange {
