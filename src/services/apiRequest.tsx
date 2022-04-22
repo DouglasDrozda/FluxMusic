@@ -1,9 +1,9 @@
-import { INews } from '../interfaces';
-import api from './api';
+import { INews, IArtist } from '../interfaces';
+import {apiNews, apiArtists} from './api';
 
 const resquestNews = async (): Promise<INews | undefined> => {
   try {
-    const response = await api.get('news.json');
+    const response = await apiNews.get('news.json');
     const json = response.data.data;
 
     return json;
@@ -13,4 +13,19 @@ const resquestNews = async (): Promise<INews | undefined> => {
   }
 };
 
-export default resquestNews;
+const resquestArtists = async (): Promise<IArtist | undefined> => {
+  try {
+    const response = await apiArtists.get('artists.json');
+    const json = response.data.data;
+
+    return json;
+  } catch (err) {
+    console.error(err);
+    return undefined;
+  }
+};
+
+export {
+  resquestNews,
+  resquestArtists,
+};
