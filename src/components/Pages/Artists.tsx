@@ -15,10 +15,10 @@ function Artists(): JSX.Element {
       <div className="artists-container">
         <h1 className="artists-tilte">Artistas renomados</h1>
         <ul className="artists-sub-container">
-          {isLoading ? <p>Loading...</p> :
+          {isLoading ? <p className="loading">Carregando...</p> :
             (filterArtist === undefined ? dataArtists : filterArtist)?.map((art) =>
               <li className="artists-card" key={art.id}>
-                <h1>{art.name}</h1>
+                <h2>{art.name}</h2>
                 <div className="artists-img">
                   <img src={art.img} alt={art.alt} width="300px" />
                 </div>
