@@ -21,9 +21,9 @@ function Discs(): JSX.Element {
                 <img src={disc.img} alt={disc.alt} width="300px" />
               </div>
               <p className="discs-description">{disc.description}</p>
-              <p>{`Data de lançamento: ${disc.release_date}`}</p>
+              <p><strong>Data de lançamento:</strong> {`${disc.release_date}`}</p>
               <div className="discs-buttom">
-                <a href={disc.link} target="_blank">SAIBA MAIS...</a>
+                <a href={disc.link} target="_blank">VER MAIS</a>
               </div>
             </li>
           )}

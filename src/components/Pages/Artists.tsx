@@ -24,11 +24,11 @@ function Artists(): JSX.Element {
                 </div>
                 <p className="artists-description">{art.description}</p>
                 <div className="artists-info">
-                  <p>{art.nascimento === '' ? '' : `Nascimento: ${art.nascimento}`}</p>
-                  <p>{art.falecimento === '' ? '' : `Falecimento: ${art.falecimento}`}</p>
+                  <p><strong>Nascimento: </strong>{art.nascimento === '' ? ' Não há registro' : art.nascimento}</p>
+                  <p><strong>Falecimento: </strong>{art.falecimento === '' ? ' Não há registro' : art.falecimento}</p>
                 </div>
                 <div className="artists-buttom">
-                  <a href={art.url} target="_blank">SAIBA MAIS...</a>
+                  <a href={art.url} target="_blank">VER MAIS</a>
                 </div>
               </li>
             )}

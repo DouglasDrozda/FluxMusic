@@ -17,10 +17,10 @@ function News(): JSX.Element {
                 <div className="img-news">
                   <img src={data.img} alt={data.alt} />
                   <div className="news-infos">
-                    <a href={data.url} target="_blank">{data.title}</a>
-                    <p>{data.subtitle}</p>
-                    <p>{`Escritor: ${data.writer}`}</p>
-                    <a href={data.url} target="_blank" id="view-more">Ver mais...</a>
+                    <h2>{data.title}</h2>
+                    <p>{data.subtitle === '' ? 'Não há dados.' : data.subtitle}</p>
+                    <p><strong>Escritor: </strong>{data.writer}</p>
+                    <a href={data.url} target="_blank" id="view-more">Ver mais</a>
                   </div>
                 </div>
               </div>
