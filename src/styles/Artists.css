@@ -47,7 +47,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.artists-card h1 {
+.artists-card h2 {
   color: #C10425;
 }
 
@@ -58,6 +58,7 @@
 
 .artists-img img {
   border-radius: 5px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
   width: 100%;
   height: 100%;
 }
@@ -74,8 +75,11 @@
 
 .artists-info {
   border-block: 1px solid rgba(0, 0, 0, 0.15);
-  height: 125px;
+  display: flex;
+  height: 150px;
   width: 100%;
+  flex-direction: column;
+  justify-content: space-around;;
   padding: 10px;
 }
 
@@ -91,20 +95,20 @@
   font-weight: 700;
   padding: 10px;
   margin-block: 20px;
-}
-
-.artists-buttom a {
-  text-decoration: none;
-  color: #C10425;
-}
-
-.artists-buttom a:hover {
-  color: #fff;
   transition: all 0.2s;
 }
 
 .artists-buttom:hover {
   background-color: #C10425;
   cursor: pointer;
-  transition: all 0.4s;
+}
+
+.artists-buttom a {
+  transition: all 0.2s;
+  color: #C10425;
+  text-decoration: none;
+}
+
+.artists-buttom:hover a {
+  color: #fff;
 }
