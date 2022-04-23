@@ -3,6 +3,7 @@ import context from '../../context';
 import Header from '../Header/Header';
 import '../../styles/Discs.css';
 import InputSearchDisc from '../InputSearch/InputSearchDisc';
+import Footer from '../Footer/Footer';
 
 function Discs(): JSX.Element {
   const { dataDiscs, isLoading, filterDiscs } = useContext(context).context;
@@ -29,6 +30,7 @@ function Discs(): JSX.Element {
           {filterDiscs?.length === 0 && !isLoading ?
             (<h4 className="error-message">Ops, nenhum disco encontrado com esse nome 😥</h4>) : null}
       </ul>
+      <Footer />
     </>
   );
 };
