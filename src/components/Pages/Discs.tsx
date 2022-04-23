@@ -12,24 +12,27 @@ function Discs(): JSX.Element {
     <>
       <Header />
       <InputSearchDisc />
-      <ul className="discs-container">
-        {isLoading ? <p>Loading...</p> :
-          (filterDiscs === undefined ? dataDiscs: filterDiscs)?.map((disc) =>
-            <li className="discs-card" key={disc.id}>
-              <h1>{disc.title}</h1>
-              <div className="discs-img">
-                <img src={disc.img} alt={disc.alt} width="300px" />
-              </div>
-              <p className="discs-description">{disc.description}</p>
-              <p>{`Data de lançamento: ${disc.release_date}`}</p>
-              <div className="discs-buttom">
-                <a href={disc.link} target="_blank">SAIBA MAIS...</a>
-              </div>
-            </li>
-          )}
+      <div className="discs-container">
+        <h1 className="discs-tilte">Discos</h1>
+        <ul className="discs-sub-container">
+          {isLoading ? <p className="loading">Carregando...</p> :
+            (filterDiscs === undefined ? dataDiscs : filterDiscs)?.map((disc) =>
+              <li className="discs-card" key={disc.id}>
+                <h2>{disc.title}</h2>
+                <div className="discs-img">
+                  <img src={disc.img} alt={disc.alt} width="300px" />
+                </div>
+                <p className="discs-description">{disc.description}</p>
+                <p><strong>Data de lançamento:</strong> {`${disc.release_date}`}</p>
+                <div className="discs-buttom">
+                  <a href={disc.link} target="_blank">VER MAIS</a>
+                </div>
+              </li>
+            )}
           {filterDiscs?.length === 0 && !isLoading ?
             (<h4 className="error-message">Ops, nenhum disco encontrado com esse nome 😥</h4>) : null}
-      </ul>
+        </ul>
+      </div>
       <Footer />
     </>
   );

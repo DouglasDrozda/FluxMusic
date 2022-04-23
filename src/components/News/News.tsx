@@ -8,19 +8,19 @@ function News(): JSX.Element {
 
   return (
     <section className="news-container">
-      {isLoading ? <p>loading....</p> :
+      <h1 className="news-tilte">Notícias</h1>
+      {isLoading ? <p className="loading">Carregando...</p> :
         <ul className="news-sub-container">
-          <h1>Notícias</h1>
           {(filterNews === undefined ? dataNews : filterNews)?.map((data) => (
-            <li className="news-content-contain" id="news" key={data.id}>
+            <li className="news-content-contain" key={data.id}>
               <div className="news-content">
                 <div className="img-news">
                   <img src={data.img} alt={data.alt} />
                   <div className="news-infos">
-                    <a href={data.url} target="_blank">{data.title}</a>
-                    <p>{data.subtitle}</p>
-                    <p>{`Escritor: ${data.writer}`}</p>
-                    <a href={data.url} target="_blank" id="view-more">Ver mais...</a>
+                    <h2>{data.title}</h2>
+                    <p>{data.subtitle === '' ? 'Não há dados.' : data.subtitle}</p>
+                    <p><strong>Escritor: </strong>{data.writer}</p>
+                    <a href={data.url} target="_blank" id="view-more">Ver mais</a>
                   </div>
                 </div>
               </div>
