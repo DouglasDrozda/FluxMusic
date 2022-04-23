@@ -3,6 +3,7 @@ import context from '../../context';
 import Header from '../Header/Header';
 import '../../styles/Artists.css';
 import InputSearchArtist from '../InputSearch/InputSearchArtist';
+import Footer from '../Footer/Footer';
 
 function Artists(): JSX.Element {
   const { dataArtists, isLoading, filterArtist } = useContext(context).context;
@@ -35,6 +36,7 @@ function Artists(): JSX.Element {
             (<h4 className="error-message">Ops, nenhum artista encontrado com esse nome 😥</h4>) : null}
         </ul>
       </div>
+      <Footer />
     </>
   );
 };
