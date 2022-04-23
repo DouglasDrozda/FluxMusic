@@ -1,5 +1,4 @@
 import { INews, IArtist, IDiscs } from '../interfaces';
-// import { apiNews, apiArtists, apiDiscs } from './api';
 import axios from 'axios';
 
 const resquestNews = async (): Promise<INews | undefined> => {
