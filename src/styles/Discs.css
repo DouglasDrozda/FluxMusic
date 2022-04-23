@@ -7,17 +7,19 @@
 }
 
 .discs-card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  background: #eaeaea;
+  display: flex;
+  flex-direction: column;
   width: 400px;
   margin: 70px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .discs-card h1 {
+  color: #C10425;
   height: 100px;
   padding: 10px;
   text-align: center;
@@ -53,7 +55,7 @@
 
 .discs-buttom a {
   text-decoration: none;
-  color: #000000;
+  color: #C10425;
 }
 
 .discs-buttom a:hover {

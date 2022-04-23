@@ -36,14 +36,19 @@
 }
 
 .artists-card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  background: #eaeaea;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   width: 400px;
   margin: 50px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.artists-card h1 {
+  color: #C10425;
 }
 
 .artists-img {
@@ -68,7 +73,10 @@
 }
 
 .artists-info {
+  border-block: 1px solid rgba(0, 0, 0, 0.15);
   height: 125px;
+  width: 100%;
+  padding: 10px;
 }
 
 .artists-info p {
@@ -82,12 +90,12 @@
   border-radius: 5px;
   font-weight: 700;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-block: 20px;
 }
 
 .artists-buttom a {
   text-decoration: none;
-  color: #000000;
+  color: #C10425;
 }
 
 .artists-buttom a:hover {
